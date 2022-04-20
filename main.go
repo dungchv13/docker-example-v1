@@ -34,7 +34,7 @@ type user struct {
 }
 
 func init() {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://admin:password@mongodb:27017/"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://admin:password@localhost:27017/"))
 	if err != nil {
 		log.Fatal(err)
 	}
