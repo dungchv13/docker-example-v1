@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   my-app:
-    image: my-app:2.0
+    image: users-app:1.0
     restart: always
     ports:
       - 8080:8080
